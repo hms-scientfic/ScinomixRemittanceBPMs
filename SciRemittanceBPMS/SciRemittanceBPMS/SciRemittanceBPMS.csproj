@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>4d31dfd6-6a4e-4db4-a17e-ca855d180ec1</ProjectGuid>
+    <ProjectGuid>{4D31DFD6-6A4E-4DB4-A17E-CA855D180EC1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SciRemittanceBPMS</RootNamespace>
@@ -31,24 +31,82 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="EntityFramework">
+      <HintPath>References\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.Customization">
+      <HintPath>References\Epicor.Customization.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.Customization.Bpm">
+      <HintPath>References\Epicor.Customization.Bpm.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.Customization.Core">
+      <HintPath>References\Epicor.Customization.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.Functions.Core">
+      <HintPath>References\Epicor.Functions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.Functions.Runtime">
+      <HintPath>References\Epicor.Functions.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.Ice">
+      <HintPath>References\Epicor.Ice.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.SCIObjects">
+      <HintPath>References\Epicor.SCIObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.ServiceModel">
+      <HintPath>References\Epicor.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.System">
+      <HintPath>References\Epicor.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Common.ContractInterfaces">
+      <HintPath>References\Erp.Common.ContractInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Data.910100">
+      <HintPath>References\Erp.Data.910100.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.BpHolds">
+      <HintPath>References\Ice.Contracts.BO.BpHolds.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.BpMethod">
+      <HintPath>References\Ice.Contracts.BO.BpMethod.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Data.Model">
+      <HintPath>References\Ice.Data.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.BAM">
+      <HintPath>References\Ice.Lib.BAM.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.Blaq">
+      <HintPath>References\Ice.Lib.Blaq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.Bpm.Shared">
+      <HintPath>References\Ice.Lib.Bpm.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.CdcServiceShared">
+      <HintPath>References\Ice.Lib.CdcServiceShared.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.Shared">
+      <HintPath>References\Ice.Lib.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CommonTypes.cs" />
+    <Compile Include="InTran.sciSetPRemit.cs" />
+    <Compile Include="InTranTrigger.cs" />
+    <Compile Include="InTranTriggerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
