@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SciRemittanceBPMS", "SciRemittanceBPMS\SciRemittanceBPMS.csproj", "{4D31DFD6-6A4E-4DB4-A17E-CA855D180EC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D31DFD6-6A4E-4DB4-A17E-CA855D180EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D31DFD6-6A4E-4DB4-A17E-CA855D180EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D31DFD6-6A4E-4DB4-A17E-CA855D180EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D31DFD6-6A4E-4DB4-A17E-CA855D180EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1F54928-7ACC-4907-8D67-B66E1E58A454}
+	EndGlobalSection
+EndGlobal
